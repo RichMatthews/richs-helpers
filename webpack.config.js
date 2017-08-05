@@ -1,3 +1,4 @@
+const path = require('path');
 module.exports = {
   entry: './index',
   output: {
@@ -16,6 +17,4 @@ module.exports = {
       }
     ]
   }
-}
-
 }

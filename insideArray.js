@@ -1,7 +1,11 @@
-Array.prototype.insideArray = function(a) {
-    for (var i=0; i < array.length; i++){
-      if (array[i] == a) {
-        return true;
-      }
+Array.prototype.insideMyArray = function(value) {
+  if (typeof value == 'object') {
+	console.log('object!')
+  }
+  for (var i=0; i < this.length; i++){
+  if (this[i] == value) {
+    return true;
     }
   }
+  return false;
+}
